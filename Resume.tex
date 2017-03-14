@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Jordan}{Rodgers}{\href{mailto:com6056@gmail.com}{com6056@gmail.com} | 818.854.0342 | \href{https://linkedin.com/in/jrodgers2}{linkedin.com/in/jrodgers2} \\
+%\vspace{3pt} Searching for a Security/SRE/DevOps/InfraOps internship for Summer 2018
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Rochester Institute of}
+\subsection{Technology}
+\descript{BS in Networking and Systems Administration}
+\descript{Minor in Computing Security}
+\location{Expected May 2018 | Rochester, NY \\ GPA: 3.91}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+RIT Dean's List (Fall '14 \& Spring '15) \\
+RIT Dean's List (Fall '15 \& Spring '16) \\
+RIT Dean's List (Fall '16) \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Routing and Switching \\
+Cryptography \& Authentication \\
+Fundamentals of Computing Security \\
+Windows System Forensics \\
+Computer Science I \\
+Python Scripting \\
+Wireless Networking \\
+Systems Administration I \& II \\
+Web \& Mobile I \\
+Network Services \\
+Databases and Data Modeling \\
+Virtualization
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Management \& Monitoring Tools:} 
+Chef, VMware vSphere, oVirt, Proxmox, Zabbix, Datadog \\
+\vspace{5pt}
+\location{Cloud Services/Providers:}
+AWS (EC2, RDS, VPC, S3, CloudFormation, Route 53, and IAM), Google Apps, Office 365 \\
+\vspace{5pt}
+\location{Network \& Security:}
+Cisco Switches \& Routers, HP Switches, Cisco \& Ruckus Wireless, Security Onion IDS, pfSense, SonicWALL, ZyWALL  \\
+\vspace{5pt}
+\location{Services \& Applications:}
+Ceph, Apache, Active Directory, SCCM, Exchange Server, MDT, WDS, Group Policy, Windows \& Linux DHCP \& DNS \\
+\vspace{5pt}
+\location{System Platforms:}
+Linux (RHEL, Debian), Windows Server (2003-2012R2), Mac OS X \\
+\vspace{5pt}
+\location{Development:}
+Python, Basic Ruby
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Intuit}
+\descript{| Security Engineer Intern}
+\location{June 2016 – August 2016 | San Diego, CA}
+\vspace{-1mm}
+\begin{itemize}
+  \itemsep-4pt
+  \item Learned and used Chef to deploy JIRA and Alerta in AWS.
+  \item Architected both to fit the needs of the rapidly-changing environment so they could be rebuilt from scratch at any time.
+  \item Used multiple AWS services to securely deploy the applications.
+  \item Tested multiple monitoring systems and implemented Datadog monitoring into the JIRA deployment.
+  \item Learned the basics of Ruby to improve the automation of an internal system.
+  \item Did penetration testing on an outdated Java application and reported findings.
+\end{itemize}
+\vspace{-4mm}
+\sectionsep
+
+\runsubsection{Rochester Institute of Technology}
+\descript{| Assistant Sysadmin}
+\location{September 2014 – Present | Rochester, NY}
+\vspace{-3mm}
+\begin{itemize}
+  \itemsep-4pt
+  \item Working with the College of Engineering to support the various college systems including an oVirt virtual environment and multiple RHEL and Windows Servers.
+  \item Currently working on a VM self-service system, integrating oVirt with Ceph using Cinder, and integrating oVirt with AWS.
+  \item Implemented Zabbix to assist in the monitoring of the college infrastructure.
+  \item Set up Rundeck to aid with the automation of Ansible and other tasks.
+\end{itemize}
+\vspace{-4mm}
+\sectionsep
+
+\runsubsection{HighTech Los Angeles}
+\descript{| Assistant Sysadmin}
+\location{June 2011 – August 2015 | Van Nuys, CA}
+\vspace{-3mm}
+\begin{itemize}
+  \itemsep-4pt
+  \item Migrated to and implemented current email system, deployment system, printer server/accounting system, and web server.
+  \item Assisted in the upgrade to the current virtual environment, wireless infrastructure, and core networking.
+  \item Maintained multiple servers and completed multiple projects to improve infrastructure, strengthen security, and better serve the needs of the school.
+  \item Trained current IT Director and provide remote support when needed.
+\end{itemize}
+\vspace{-4mm}
+\sectionsep
+
+\runsubsection{Unified Pictures}
+\descript{| IT Assistant }
+\location{June 2013 – August 2014 | Northridge, CA}
+% \vspace{-3mm}
+% \begin{itemize}
+%   \itemsep-4pt
+%   \item Upgraded and improved infrastructure and security for upcoming animated film.
+%   \item Implemented multiple systems including the current wireless infrastructure, a render farm, and multiple NAS systems.
+% \end{itemize}
+% \vspace{-5mm}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-3mm}
+\section{Projects}
+\runsubsection{Firewall/IPS}
+\location{February 2015 – Present}
+\vspace{-3mm}
+\begin{itemize}
+  \itemsep-4pt
+  \item Researched and implemented a firewall (pfSense) to block malicious traffic and serve as an IPS for Computer Science House infrastructure.
+  \item Using the firewall in conjunction with an IDS to further secure the network and aid in attack identification and prevention.
+  \item Protecting over 100 devices often utilizing close to gigabit throughput.
+\end{itemize}
+\vspace{-4mm}
+\sectionsep
+
+\runsubsection{IDS/Network Monitor}
+\location{October 2014 – Present}
+\vspace{-3mm}
+\begin{itemize}
+  \itemsep-4pt
+  \item Researched and implemented an IDS and network monitoring system based on Security Onion and ntopng.
+  \item Requires constant monitoring and maintenance of rules in order to be effective.
+  \item Using alerts from the IDS to tune the IPS when necessary.
+\end{itemize}
+\vspace{-4mm}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES & INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-2mm}
+\section{Activities}
+\runsubsection{Computer Science House}
+\location{\href{https://csh.rit.edu/}{csh.rit.edu}}
+Operations and Communications Director and an RTP (Root Type Person) for CSH (Computer Science House). An RTP is a volunteer system and network administrator for CSH. The Operations and Communications Director represents all of the RTP's on the CSH executive board. \\
+% \vspace{3pt}
+% \runsubsection{Audio \& Video Production} \\
+% \vspace{3pt}
+% \runsubsection{Guitar}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
